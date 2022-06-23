@@ -13,9 +13,9 @@ ___
 
 #### LAFLEFT
 
-    Esta es una pequeña zona para hacer pruebas varias con lo libreria y entender como utilizar los mapas en mis proyectos
+Esta es una pequeña zona para hacer pruebas varias con lo libreria y entender como utilizar los mapas en mis proyectos.
 
 ___
 
 #### MagicMenuTab
-    Una practina para una menu o layout lateral muy colorido y llamativo para el uso en proyectos donde la interface solicite minimalismo pero exploracion en diferentes ventanas del proyecto
+Una practina para una menu o layout lateral muy colorido y llamativo para el uso en proyectos donde la interface solicite minimalismo pero exploracion en diferentes ventanas del proyecto.

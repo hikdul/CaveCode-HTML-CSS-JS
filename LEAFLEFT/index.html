@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>prueba de uso para leafleft</title>
+
+    <!-- CSS bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <!-- CSS  propio -->
+    <link rel="stylesheet" href="css.css" />
+    <!--css de la libreria-->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css"
+      integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ=="
+      crossorigin=""
+    />
+  </head>
+  <body>
+    <main class="row">
+      <div class="col-6">
+        <div class="box">
+          <div id="map" style="height: 600px"></div>
+        </div>
+      </div>
+
+      <div class="col-6 mt-5">
+        <div class="form-group">
+          <label for="latitud">Latitud</label>
+          <input type="text" id="latitud" name="latitud" value="8.129842" />
+        </div>
+        <div class="form-group">
+          <label for="longitud">Longitud</label>
+          <input type="text" id="longitud" name="longitud" value="-71.978021" />
+        </div>
+      </div>
+    </main>
+
+    <!--JS DE LA LIBRERIA-->
+    <script
+      src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"
+      integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ=="
+      crossorigin=""
+    ></script>
+
+    <!-- JavaScript Bundle with Popper  PARA BOOTSTRAP-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
+
+<script>
+  let lat = 8.129842;
+  let lng = -71.978021;
+  let ilat = document.getElementById("latitud");
+  let ilng = document.getElementById("longitud");
+
+  let initialZoom = 16;
+  //para generar el mapa
+  var map = L.map("map").setView([lat, lng], initialZoom);
+  L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+    maxZoom: 20,
+    attribution: "© HIKDUL.DEV",
+  }).addTo(map);
+  // para generar un popup en el momento de crear una marca
+  function onMapClick(e) {
+    lat = e.latlng.lat;
+    lng = e.latlng.lng;
+    ilat.value = lat;
+    ilng.value = lng;
+    var marker = L.marker([lat, lng]).addTo(map);
+  }
+  // activa el evento
+  map.on("click", onMapClick);
+  //para trabajar con la localizacion del usuario
+
+  map.locate({ enableHighAccuracy: true });
+
+  map.on("locationfound", function (e) {
+    console.log(e);
+    lat = e.latlng.lat;
+    lng = e.latlng.lng;
+    ilat.value = lat;
+    ilng.value = lng;
+  console.log(map)
+  });
+</script>

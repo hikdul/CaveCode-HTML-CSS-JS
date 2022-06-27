@@ -5,8 +5,9 @@ esta es una pequeña cuenva con practicas simples ejecutada en origenes de html,
 ## Mini Proyectos Presentes
  
 los proyectos se separan en carpetas. y estos a su ves contendran diferentes apartados dentro de ello
-* LAFLEFT : trabajo con esta libreria
-* Menu: muestras de menus
+* LAFLEFT : trabajo con esta libreria.
+* Menu: muestras de menus.
+* Cards: proyecto interesante sobre generar tarjetas.
 
 ___
 
@@ -24,3 +25,11 @@ Una practina para una menu o layout lateral muy colorido y llamativo para el uso
 
 ### simple arrow menu
 un menu sencillo que tiene un juego de dos flechas que lo siguen y hacen un efecto visual bastante atractivo
+
+---
+## Cards
+
+### GlassMarphismCard
+tarjetas con un efecto que se asemejan a como si fueran echas de vidrio. para mas infor sobre este tipo de tarjeta visitar este video de [resumen] para generar tarjetas
+
+[resumen]: https://www.youtube.com/watch?v=hv0rNxr1XXk&ab_channel=OnlineTutorials

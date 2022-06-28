@@ -5,11 +5,12 @@ esta es una pequeña cuenva con practicas simples ejecutada en origenes de html,
 ## Mini Proyectos Presentes
  
 los proyectos se separan en carpetas. y estos a su ves contendran diferentes apartados dentro de ello
+
 * LAFLEFT : trabajo con esta libreria.
 * Menu: muestras de menus.
 * Cards: proyecto interesante sobre generar tarjetas.
 * Buttons: efecto sobre botones y cosas bastante interesantes.
-
+* loading: ventanas de carga 
 ___
 
 ## LEAFLET
@@ -42,3 +43,8 @@ un boton con un atractivo efecto y cambio de forma.
 
 ### Neon
 un boton que enciende con si de una luces ne neon se tratara
+
+## loading
+
+### Glawing gradient loader ring
+un circulo que parece una lus de neon al cargar

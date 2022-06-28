@@ -11,6 +11,7 @@ los proyectos se separan en carpetas. y estos a su ves contendran diferentes apa
 * Cards: proyecto interesante sobre generar tarjetas.
 * Buttons: efecto sobre botones y cosas bastante interesantes.
 * loading: ventanas de carga 
+* letters: efector geniales en letras
 ___
 
 ## LEAFLET
@@ -43,8 +44,15 @@ un boton con un atractivo efecto y cambio de forma.
 
 ### Neon
 un boton que enciende con si de una luces ne neon se tratara
+### Neon 2
+otro modo de generar este efecto
 
 ## loading
 
 ### Glawing gradient loader ring
 un circulo que parece una lus de neon al cargar
+
+## Letters
+
+### Water
+un efecto genial para observar como si ubiese agua entre una letra

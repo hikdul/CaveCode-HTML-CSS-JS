@@ -37,6 +37,7 @@ tarjetas con un efecto que se asemejan a como si fueran echas de vidrio. para ma
 
 [resumen]: https://www.youtube.com/watch?v=hv0rNxr1XXk&ab_channel=OnlineTutorials
 
+___
 ## Buttons
 
 ### ShapeButtom
@@ -47,12 +48,20 @@ un boton que enciende con si de una luces ne neon se tratara
 ### Neon 2
 otro modo de generar este efecto
 
+___
 ## loading
 
 ### Glawing gradient loader ring
 un circulo que parece una lus de neon al cargar
 
+___
 ## Letters
 
 ### Water
 un efecto genial para observar como si ubiese agua entre una letra
+
+___
+## inputs form
+
+### anmated login
+un login que cambia de color con su fondo... un efecto interesante.

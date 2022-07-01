@@ -29,6 +29,9 @@ Una practina para una menu o layout lateral muy colorido y llamativo para el uso
 ### simple arrow menu
 un menu sencillo que tiene un juego de dos flechas que lo siguen y hacen un efecto visual bastante atractivo
 
+### DashboradWhitVanilla
+un menu usando un poco de js y mucho, pero mucho css.. realmente hay varia conceptos que estudiar aca, ya que se sale de lo basico...
+
 ---
 ## Cards
 
@@ -54,6 +57,8 @@ ___
 ### Glawing gradient loader ring
 un circulo que parece una lus de neon al cargar
 
+### Iluminate loading
+vision interesante para generar un loading bastante interesante y muy optimo en recursos
 ___
 ## Letters
 
@@ -65,3 +70,9 @@ ___
 
 ### anmated login
 un login que cambia de color con su fondo... un efecto interesante.
+
+___
+## Backgrounds
+
+### Splash Image Mask
+un efecto peculiar al anteponer una mascara con una imagen... 

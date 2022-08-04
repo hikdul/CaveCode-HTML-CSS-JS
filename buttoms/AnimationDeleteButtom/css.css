@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'fira code';
+}
+
+body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #222;
+    
+}
+
+a
+{
+    position: relative;
+    width: 160px;
+    height: 50px;
+    background: #333;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .5s;
+    box-shadow:  0 5px 20px rgba(0, 0, 0, .1);
+}
+
+/*
+ * quede en este video
+ * https://www.youtube.com/watch?v=IwOhw82h2u0&ab_channel=OnlineTutorials 
+ * tiempo 2:16 Min
+*/

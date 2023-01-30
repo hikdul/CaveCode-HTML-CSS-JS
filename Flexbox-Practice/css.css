@@ -1,0 +1,53 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body
+{
+    background: f3f3f3;
+    font-family: 'fira code';
+}
+
+.container
+{
+    width: 80%;
+    max-width: 1000px;
+    background-color: #eee;
+    height: 500px;
+    /*asi activo o indico que ahora el css va a estar regido por flex*/
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    align-items:baseline;
+    align-content:center;
+    order: 1;
+}
+
+.box
+{
+    width: 100px;
+    height: 100px;
+    background: #f79256;
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+    font-size: 40px;
+    color: #fff;
+    flex-shrink: 0;
+}
+
+.dos
+{
+    order: 2;
+}
+
+.cuatro
+{
+    flex-grow: 2;
+}

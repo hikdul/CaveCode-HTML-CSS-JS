@@ -1,0 +1,71 @@
+/*
+    ?: Areas: son elemento definidos en el css que se le aplican un valor exclusivo...
+
+*/
+.container
+{
+   display: grid;
+   gap: 20px;
+   grid-template-columns: repeat(3, auto);
+   /*
+   ! acontinuacion se registran las areas con sus nombres
+   */
+   grid-template-areas: "header header header" 
+                        "sb1 cont sb2"
+                        "sb1 cont widgets"
+                        "footer footer footer";
+} 
+
+.container .header
+{
+    background-color: rgb(26, 146, 186);
+    /*
+    ! aqui una muestra de como se asignan las areas a un elemento en concreto
+    */
+    grid-column-start: header;
+    grid-column-end: header;
+}
+
+.container .sd1
+{
+
+    background-color: #333;
+    /*
+    
+        grid-column-start: sb1;
+        grid-column-end:   sb1;
+        grid-row-start:    sb1;
+        grid-row-end:      sb1;
+        con la siguiente linea me evito el tener que escribir todo esto
+        grid-column: sb1;
+        grid-row: sb1;
+        o la definitiva como lo deje
+    */
+    grid-area: sb1;
+
+}
+
+.container .cont
+{
+    background-color: #fff;
+    color: #333;
+    grid-area: cont;
+}
+
+.container .sb2
+{
+    background-color: #333;
+    grid-area: sb2;
+}
+
+.container .widgets
+{
+    background-color: beige;
+    color: #333;
+    grid-area: widgets;
+}
+
+.container .footer
+{
+    grid-area: footer;
+}

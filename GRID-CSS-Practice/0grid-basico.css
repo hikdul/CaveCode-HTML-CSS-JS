@@ -1,0 +1,28 @@
+/* este es contenedor para anunciar que el padre es grid */
+/*
+? las lineas que separan cada seccion en la grid se llaman grads
+? en este sistema existen dos grids: la explicita y la implicita
+ * la explicita es aquella que nosotros definimas
+ * la implicita es aquella que agrega en base de que el total de elementos superen a la grid definida
+*/
+.container
+{
+    display: grid;
+    /* * especifica el numero de columnas*/
+    /* * para indicar el numero de columnas se agregan dandole su tamano como por ejemplo en pixeles, em, rem ....*/
+    /* * tambien existe la unidad fr que basicamente significa fraccion y sirve para indicar similitud o un a cantidad de espacion contreto
+       * de otro modo divide el espacion disponible entre la cantidad de fracciones(fr) existentes
+    */
+    grid-template-columns: 1fr 2fr 3fr;
+    /* * habla sobre las filas 
+       * Para usar los fr en lon rows(filas) se recomienda indicar una altura para que asi grid sepa como hacer sus calculos
+    */
+    grid-template-rows: 100px 200px 150px 600px;
+    /* * grid-gap: se sustituyo por 'gap:' esta basicamente indica el espacio de que debe de existir entre elementos 
+       * basicamente se asigna asi <espacio por filas> <espacio por columnas> o tambien <todo el espaciado>
+    */
+    gap: 5px 15px;
+    /*
+    */
+    
+} 

@@ -1,0 +1,14 @@
+
+/*
+? Repeat(cant, tam); para que repita el tamano tanta veces como cantidad indique
+? cant: el numero de veces que se repetira
+? tam: el tamano de la columna que se ejecutara
+*/
+.container
+{
+   display: grid;
+   gap: 20px;
+   grid-template-columns: 100px repeat(2, 1fr);
+   grid-template-rows: repeat(3,minmax(100px, 1fr));
+} 
+

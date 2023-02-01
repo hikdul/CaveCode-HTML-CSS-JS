@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/*
+    ! arreglar detalles de colores
+*/
+body
+{
+    font-size: 24px;   
+    background-color: #fff;
+    color: #f3f3f3;
+}
+
+a
+{
+    text-decoration: none;
+    color: #161515;
+}
+
+a:hover
+{
+    color: #7A8A2B;
+    transition: ease 0.5s;
+}
+
+a.active
+{
+    color: #7A8A2B;
+}
+
+nav
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 30%;
+    max-width: 150px;
+    background-color: #060606;
+    height: 100vh;
+}
+/* * Header */
+nav > .header
+{
+    width: 100%;
+    max-width: 200px;
+    background-color: #161515;
+}
+
+nav > .header > .cont-icon
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #161515;
+}
+
+
+nav > .header > .cont-icon > .icon
+{
+    width: 100%;
+    max-width: 100px;
+}
+
+nav > .header > .cont-icon > img
+{
+    width: 10rem;
+}
+/* * body */
+nav > .body 
+{
+    width: 100%;
+    max-width: 200px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+nav > .body > .cont-links
+{
+
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    height: 100%;
+    
+}
+
+nav > .body > .cont-links > .link
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+nav > .body > .cont-links > .link > i
+{
+    font-size: 50px;
+}
+
+nav > .body > .cont-links > .link > .name
+{
+    position: absolute;
+    background: #333;
+    transform: translateY(-50%);
+    padding: 5px 10px;
+    border-radius: 6px;
+    transition: .5s;
+    opacity: 0;
+    visibility: hidden;
+}
+
+
+nav > .body > .cont-links > .link:hover > .name
+{
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0) translateY(-150%);
+}
+
+/* * footer */
+nav > .footer
+{
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+nav > .footer > hr
+{
+    width: 80%;
+    height: 10%;
+    border: none;
+    text-align: center;
+    background-color: #161515;
+    margin-bottom: 10px;
+    margin-left: 10%;
+}
+
+nav > .footer > .cont-medias
+{
+    display: flex;
+    flex-direction: row ;
+    justify-content: space-around;
+}

@@ -2,4 +2,38 @@
 {
     display: grid;
     gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 200px);
+    /*
+        *justify-items: organiza los elemnetos de forma horizontal
+        start, inicio
+        end, final
+        auto, auto
+        stretch, todo el espacio disponible
+        center, en el centro
+    */
+
+    justify-items:center;
+    /*
+        *align-items: organiza de modo vertical
+        start, inicio
+        end, final
+        auto, auto
+        stretch, todo el espacio disponible
+        center, en el centro
+    */
+    align-items:center;
 } 
+
+.container .item{
+    /*
+        * justify-self => basicamente indica que tanto debe de ocupar el elemneto a nivel horizontal
+        > start, end, stretch, center, auto
+    */
+        justify-self: stretch;
+    /*
+        *align-self => indica que tando debe de ocupar el elemento a nivel vertical
+        > start, end, stretch, center, auto
+    */
+        align-self: stretch;
+}

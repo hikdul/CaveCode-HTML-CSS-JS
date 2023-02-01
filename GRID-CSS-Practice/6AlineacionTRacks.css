@@ -1,0 +1,17 @@
+/*
+    alinear tracks, es organizar la grid en base al contenedor.
+*/
+.container
+{
+    display: grid;
+    gap: 20px;
+    height: 800px;
+    grid-template-columns: repeat(3, 150px);
+    grid-template-rows: repeat(3, 150px);
+    /*alinear Horizontalmente*/
+    /* end, start, center, space-around, space-evenly, space-between, auto*/
+    justify-content: space-evenly;
+    /*alinear */
+    /* end, start, center, space-around, space-between, auto*/
+    align-content: space-around;
+}

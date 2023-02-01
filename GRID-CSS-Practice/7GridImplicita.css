@@ -1,0 +1,39 @@
+/*
+    Grid implicita
+    grid-auto- rows: tamano automatico de los filas
+    grid-auto-columns: para ordenar las columnas
+*/
+.container
+{
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 200px 1fr 200px;
+    grid-template-rows: 200px 100px 200px;
+    grid-auto-columns: 50px;
+
+/*
+    grid-auto-flow: column | row | dense;
+    esto lo que genera es decir si los elementos extras al template definido se colocaran como columnas y filas
+    con dense es donde se genera el llenado con toda la rejilla para no tener que almacenar espacios en blanco
+    tambien se puede usar row dense | column dense
+    */
+    grid-auto-flow: column dense;
+}
+
+.container .span2
+{
+    /*
+        Para las columnas o elementos en particular el span se puede utilizar con el grid-row o grid-column
+    */
+    grid-row: span 2;
+
+    background-color: rgb(20, 117, 207);
+}
+
+.container .span3
+{
+    grid-column: span 3;
+    background-color: rgb(199, 37, 166);
+}
+
+

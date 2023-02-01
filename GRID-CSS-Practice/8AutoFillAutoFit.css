@@ -1,0 +1,11 @@
+.container
+{
+    display: grid;
+    gap: 20px;
+    /*
+    esto se muy usado para generar codigo responsive
+     ? auto-fill: reorganiza el numero de elementos segun sea necesario, llena una fila con la cantidad de elemento que quepan. al no entrar los mete abajo
+    ? auto-fit: evita los espacios en blanco... rellena todas las columnas disponibles
+    */
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+}

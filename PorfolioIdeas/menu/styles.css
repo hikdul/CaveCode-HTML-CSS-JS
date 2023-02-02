@@ -162,5 +162,7 @@ nav > .footer > .cont-medias
 }
 
 /*
-    en W = 374 es el maximo que puede mantener el tamaño grande, Pero en realidad me gustaria que cambiara a partir de 665
+    en W = 374 es el maximo que puede mantener el tamaño grande, Pero en realidad me gustaria que cambiara a partir de 
+    W=665 H=580
+    en este punto de 580 de alto ya empieza a tomar los tamanos maximos y tengo de cambiar hasta de tamanos y todos con los medias querys
 */

@@ -1,3 +1,8 @@
+html
+{
+    font-size: 16px;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -7,9 +12,9 @@
 */
 body
 {
-    font-size: 24px;   
+    font-size: 1rem;   
     background-color: #fff;
-    color: #f3f3f3;
+    color: #333;
 }
 
 a
@@ -36,16 +41,17 @@ nav
     justify-content: space-between;
     align-items: center;
     position: fixed;
-    width: 30%;
-    max-width: 150px;
-    background-color: #060606;
+    width: 7rem;
+    min-width: 5rem;
+    max-width: 10rem;
+    background-color: #332f2f;
     height: 100vh;
 }
 /* * Header */
 nav > .header
 {
     width: 100%;
-    max-width: 200px;
+    max-width: 10rem;
     background-color: #161515;
 }
 
@@ -55,26 +61,36 @@ nav > .header > .cont-icon
     justify-content: center;
     align-items: center;
     background-color: #161515;
+    width: 100%;
+    max-width: 10rem;
 }
-
 
 nav > .header > .cont-icon > .icon
 {
-    width: 100%;
-    max-width: 100px;
+    font-size: 7rem;
+    display: block;
+    color: #333;
 }
 
-nav > .header > .cont-icon > img
+nav > .header > .cont-icon > .icon:hover
 {
-    width: 10rem;
+    color: #7A8A2B;
+    transition: ease 0.5s;
 }
+
+/* nav > .header > .cont-icon > img
+{
+
+    background-color: red;
+    width: 10rem;
+} */
 /* * body */
 nav > .body 
 {
     width: 100%;
-    max-width: 200px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    max-width: 10rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 
 nav > .body > .cont-links
@@ -82,7 +98,7 @@ nav > .body > .cont-links
 
     display: grid;
     grid-template-columns: 1fr;
-    gap: 10px;
+    gap: 1rem;
     height: 100%;
     
 }
@@ -92,7 +108,7 @@ nav > .body > .cont-links > .link
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 50px;
+    margin-bottom: 2rem;
 }
 
 nav > .body > .cont-links > .link > i
@@ -124,7 +140,7 @@ nav > .body > .cont-links > .link:hover > .name
 nav > .footer
 {
     width: 100%;
-    margin-bottom: 5px;
+    margin-bottom: 0.5rem;
 }
 
 nav > .footer > hr
@@ -144,3 +160,7 @@ nav > .footer > .cont-medias
     flex-direction: row ;
     justify-content: space-around;
 }
+
+/*
+    en W = 374 es el maximo que puede mantener el tamaño grande, Pero en realidad me gustaria que cambiara a partir de 665
+*/

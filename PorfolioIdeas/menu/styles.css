@@ -1,41 +1,36 @@
-html
-{
+html {
     font-size: 16px;
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
 }
+
 /*
     ! arreglar detalles de colores
 */
-body
-{
-    font-size: 1rem;   
+body {
+    font-size: 1rem;
     background-color: #fff;
     color: #333;
 }
 
-a
-{
+a {
     text-decoration: none;
     color: #161515;
 }
 
-a:hover
-{
+a:hover {
     color: #7A8A2B;
     transition: ease 0.5s;
 }
 
-a.active
-{
+a.active {
     color: #7A8A2B;
 }
 
-nav
-{
+nav {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -47,16 +42,15 @@ nav
     background-color: #332f2f;
     height: 100vh;
 }
+
 /* * Header */
-nav > .header
-{
+nav>.header {
     width: 100%;
     max-width: 10rem;
     background-color: #161515;
 }
 
-nav > .header > .cont-icon
-{
+nav>.header>.cont-icon {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -65,15 +59,13 @@ nav > .header > .cont-icon
     max-width: 10rem;
 }
 
-nav > .header > .cont-icon > .icon
-{
+nav>.header>.cont-icon>.icon {
     font-size: 7rem;
     display: block;
     color: #333;
 }
 
-nav > .header > .cont-icon > .icon:hover
-{
+nav>.header>.cont-icon>.icon:hover {
     color: #7A8A2B;
     transition: ease 0.5s;
 }
@@ -85,39 +77,34 @@ nav > .header > .cont-icon > .icon:hover
     width: 10rem;
 } */
 /* * body */
-nav > .body 
-{
+nav>.body {
     width: 100%;
     max-width: 10rem;
     margin-top: 1rem;
     margin-bottom: 1rem;
 }
 
-nav > .body > .cont-links
-{
+nav>.body>.cont-links {
 
     display: grid;
     grid-template-columns: 1fr;
     gap: 1rem;
     height: 100%;
-    
+
 }
 
-nav > .body > .cont-links > .link
-{
+nav>.body>.cont-links>.link {
     display: flex;
     align-items: center;
     justify-content: center;
     margin-bottom: 2rem;
 }
 
-nav > .body > .cont-links > .link > i
-{
+nav>.body>.cont-links>.link>i {
     font-size: 50px;
 }
 
-nav > .body > .cont-links > .link > .name
-{
+nav>.body>.cont-links>.link>.name {
     position: absolute;
     background: #333;
     transform: translateY(-50%);
@@ -129,22 +116,19 @@ nav > .body > .cont-links > .link > .name
 }
 
 
-nav > .body > .cont-links > .link:hover > .name
-{
+nav>.body>.cont-links>.link:hover>.name {
     opacity: 1;
     visibility: visible;
     transform: translateX(0) translateY(-150%);
 }
 
 /* * footer */
-nav > .footer
-{
+nav>.footer {
     width: 100%;
     margin-bottom: 0.5rem;
 }
 
-nav > .footer > hr
-{
+nav>.footer>hr {
     width: 80%;
     height: 10%;
     border: none;
@@ -154,10 +138,9 @@ nav > .footer > hr
     margin-left: 10%;
 }
 
-nav > .footer > .cont-medias
-{
+nav>.footer>.cont-medias {
     display: flex;
-    flex-direction: row ;
+    flex-direction: row;
     justify-content: space-around;
 }
 
@@ -166,3 +149,92 @@ nav > .footer > .cont-medias
     W=665 H=580
     en este punto de 580 de alto ya empieza a tomar los tamanos maximos y tengo de cambiar hasta de tamanos y todos con los medias querys
 */
+@media only screen and (max-width: 575px) {
+    /*
+ 575
+ */
+
+    nav {
+        position: relative;
+        width: 100%;
+        max-width: 575px;
+        height: 15vh;
+        /* background: #fff; */
+        box-shadow: 25px 25px 75px rgba(0, 0, 0, .25),
+            10px 10px 70px rgba(0, 0, 0, .25),
+            inset 5px 5px 10px rgba(0, 0, 0, .5),
+            inset 5px 5px 20px rgba(255, 255, 255, .2),
+            inset 5px 5px 10px rgba(0, 0, 0, .75);
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    /*head*/
+
+    nav>.header {
+        max-width: 3rem;
+        height: 100%;
+    }
+
+    nav>.header>.cont-icon {
+        max-width: 3rem;
+    }
+
+    nav>.header>.cont-icon>.icon {
+        font-size: 3em;
+    }
+
+    nav>.header>.cont-icon>.icon:hover {}
+
+    /*body*/
+    nav>.body {}
+
+    nav>.body>.cont-links {
+        padding-top: 1.5em;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    nav>.body>.cont-links>.link {}
+
+    nav>.body>.cont-links>.link>i {
+        font-size: 2em;
+        transition: .5s;
+    }
+
+    nav>.body>.cont-links>.link:hover>i {
+        font-size: 1em;
+        transition: .5s;
+    }
+
+    nav>.body>.cont-links>.link>.name {
+        transform: translateY(-20%);
+    }
+
+
+    nav>.body>.cont-links>.link:hover>.name {
+        transform: translateX(0) translateY(100%);
+    }
+
+    /* * footer */
+    nav>.footer {
+        max-width: 3em;
+        margin-left: 10px;
+    }
+
+    nav>.footer>hr {
+        display: none;
+    }
+
+    nav>.footer>.cont-medias {
+        flex-flow: column wrap;
+        align-items: start;
+        align-content: end;
+        margin-left: 1rem;
+    }
+
+}

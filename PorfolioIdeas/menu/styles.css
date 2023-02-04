@@ -176,6 +176,9 @@ nav>.footer>.cont-medias {
     nav>.header {
         max-width: 3rem;
         height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     nav>.header>.cont-icon {

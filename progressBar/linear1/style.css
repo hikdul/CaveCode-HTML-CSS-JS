@@ -1,0 +1,203 @@
+/*
+ * Copyright (c) 2012-2013 Thibaut Courouble
+ * http://www.cssflow.com
+ * Licensed under the MIT License
+ *
+ * Sass/SCSS source: https://goo.gl/UhXKg
+ * PSD by Vin Thomas: https://goo.gl/n1M2e
+ */
+
+body {
+  font: 18px/20px "Lucida Grande", Tahoma, Verdana, sans-serif;
+  color: #404040;
+  background: #2a2a2a;
+}
+
+h1 {
+  color: #ccc;
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+
+input {
+  text-align: center;
+  font-size: 24px;
+  margin: 0 5px 30px;
+  
+    background-color: #aaa;
+    border: none;
+    border-radius: 10px;
+}
+
+.container {
+  margin: 60px auto;
+  width: 60%;
+  text-align: left;
+}
+
+.radio {
+  display: none;
+}
+
+.half {
+  font-size: 14px;
+  color: #7c7c7c;
+}
+
+.label {
+  display: inline-block;
+  margin: 0 0 20px 0;
+  padding: 5px 0;
+  width: 52px;
+  color: #aaa;
+  text-shadow: 0 1px black;
+  border-radius: 3px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.radio:checked + .label {
+  color: white;
+  background: rgba(0, 0, 0, 0.25);
+}
+
+.progress {
+  margin: 0 auto;
+  margin-left: -3%;
+  width: 100%;
+}
+
+.progress {
+  padding: 4px;
+  background: rgba(0, 0, 0, 0.25);
+  border-radius: 6px;
+  -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px rgba(255, 255, 255, 0.08);
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px rgba(255, 255, 255, 0.08);
+}
+
+.progress-bar {
+  height: 30px;
+  border-radius: 4px;
+  background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.05));
+  background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.05));
+  background-image: -o-linear-gradient(top, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.05));
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.05));
+  -webkit-transition: 0.4s linear;
+  -moz-transition: 0.4s linear;
+  -o-transition: 0.4s linear;
+  transition: 0.4s linear;
+  -webkit-transition-property: width, background-color;
+  -moz-transition-property: width, background-color;
+  -o-transition-property: width, background-color;
+  transition-property: width, background-color;
+  -webkit-box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.25), inset 0 1px rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.25), inset 0 1px rgba(255, 255, 255, 0.1);
+}
+
+/*
+ * Note: using adjacent or general sibling selectors combined with
+ *       pseudo classes doesn't work in Safari 5.0 and Chrome 12.
+ *       See this article for more info and a potential fix:
+ *       https://css-tricks.com/webkit-sibling-bug/
+ */
+
+#zero:checked ~ .progress > .progress-bar {
+  width: 5%;
+  background-color: #f21111;
+}
+
+#ten:checked ~ .progress > .progress-bar {
+  width: 10%;
+  background-color: #f21111;
+}
+
+#ten-half:checked ~ .progress > .progress-bar {
+  width: 15%;
+  background-color: #f21111;
+}
+
+#twenty:checked ~ .progress > .progress-bar {
+  width: 20%;
+  background-color: #f23711;
+}
+
+#twenty-half:checked ~ .progress > .progress-bar {
+  width: 25%;
+  background-color: #f23711;
+}
+
+#thirty:checked ~ .progress > .progress-bar {
+  width: 30%;
+  background-color: #f25c11;
+}
+
+#thirty-half:checked ~ .progress > .progress-bar {
+  width: 35%;
+  background-color: #f25c11;
+}
+
+#fourty:checked ~ .progress > .progress-bar {
+  width: 40%;
+  background-color: #f28211;
+}
+
+#fourty-half:checked ~ .progress > .progress-bar {
+  width: 45%;
+  background-color: #f28211;
+}
+
+#fifty:checked ~ .progress > .progress-bar {
+  width: 50%;
+  background-color: #f2a711;
+}
+
+#fifty-half:checked ~ .progress > .progress-bar {
+  width: 55%;
+  background-color: #f2a711;
+}
+
+#sixty:checked ~ .progress > .progress-bar {
+  width: 60%;
+  background-color: #f2cc11;
+}
+
+#sixty-half:checked ~ .progress > .progress-bar {
+  width: 65%;
+  background-color: #f2cc11;
+}
+
+#seventy:checked ~ .progress > .progress-bar {
+  width: 70%;
+  background-color: #f2f211;
+}
+
+#seventy-half:checked ~ .progress > .progress-bar {
+  width: 75%;
+  background-color: #f2f211;
+}
+
+#eighty:checked ~ .progress > .progress-bar {
+  width: 80%;
+  background-color: #cdf211;
+}
+
+#eighty-half:checked ~ .progress > .progress-bar {
+  width: 85%;
+  background-color: #cdf211;
+}
+
+#ninety:checked ~ .progress > .progress-bar {
+  width: 90%;
+  background-color: #a7f211;
+}
+
+#ninety-half:checked ~ .progress > .progress-bar {
+  width: 95%;
+  background-color: #a7f211;
+}
+
+#onehundred:checked ~ .progress > .progress-bar {
+  width: 100%;
+  background-color: #82f211;
+}

@@ -40,6 +40,11 @@ tarjetas con un efecto que se asemejan a como si fueran echas de vidrio. para ma
 
 [resumen]: https://www.youtube.com/watch?v=hv0rNxr1XXk&ab_channel=OnlineTutorials
 
+### 3DCardHoverEffect
+en este caso es una tarjeta que genera un efecto interesante al acercar el mouse.
+
+[resumen]: https://www.youtube.com/watch?v=oswfuy4d6ug
+
 ___
 ## Buttons
 

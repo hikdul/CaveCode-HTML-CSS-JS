@@ -21,12 +21,12 @@ body
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    
+    justify-content: space-evenly;
 }
 
 .conMarcadores .containerMarcador
 {
-    margin: 10px 10px;
+    margin: 20px 20px;
     position: relative;
     display: flex;
     gap: 80px;

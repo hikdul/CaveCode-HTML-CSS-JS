@@ -16,15 +16,24 @@ body
     background: #fff;
 }
 
-.containerMarcador
+.conMarcadores
 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+}
+
+.conMarcadores .containerMarcador
+{
+    margin: 10px 10px;
     position: relative;
     display: flex;
     gap: 80px;
 }
 
 
-.containerMarcador .card
+.conMarcadores .containerMarcador .card
 {
     position: relative;
     height: 200px;
@@ -37,14 +46,14 @@ body
     
 }
 /* ** ==> Primera cara */
-.containerMarcador .card .FirstBox
+.conMarcadores .containerMarcador .card .FirstBox
 {
     position: absolute;
     inset: 0;
     border-radius: 20px;
 }
 
-.containerMarcador .card .FirstBox .firstBoxContent
+.conMarcadores .containerMarcador .card .FirstBox .firstBoxContent
 {
     position: absolute;
     padding: 10px;
@@ -76,12 +85,12 @@ body
 }
 */
 
-.containerMarcador .card:hover .FirstBox .firstBoxContent
+ .conMarcadores    .containerMarcador .card:hover .FirstBox .firstBoxContent
 {
     opacity: 0;
 }
 
-.containerMarcador .card .FirstBox .firstBoxContent .icono
+ .conMarcadores .containerMarcador .card .FirstBox .firstBoxContent .icono
 {
     /* Definir el css del icono*/
     text-align:center;
@@ -91,7 +100,7 @@ body
     font-size: 30px;
 }
 
-.containerMarcador .card .FirstBox .firstBoxContent .title1
+.conMarcadores  .containerMarcador .card .FirstBox .firstBoxContent .title1
 {
     /* Definir el css del titulo*/
     text-align: center;
@@ -100,7 +109,7 @@ body
     font-size: 25px;
 }
 
-.containerMarcador .card .FirstBox .firstBoxContent .value
+ .conMarcadores .containerMarcador .card .FirstBox .firstBoxContent .value
 {
     /* Definir el css del value*/
     text-align: center;

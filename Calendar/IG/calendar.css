@@ -1,0 +1,92 @@
+.contCalendar {
+    display: grid;
+    grid-template-rows: repeat(5,1fr);
+    grid-template-areas: "calendario calendario calendario resumenes resumenes" "calendario calendario calendario resumenes resumenes" "detalle__semana detalle__semana detalle__semana detalle__dia detalle__dia";
+    gap: 10px;
+}
+
+.calendario {
+    grid-area: calendario;
+    width: 100%;
+}
+
+
+.nbtn
+{
+    background: transparent;
+    border: none;
+    border-radius: 15px;
+}
+.dia
+{
+    padding: 10px;
+    width: 100px;
+    height: 100px;
+    background: #fff;
+    border-radius: 15%;
+    -webkit-box-shadow: 2px 2px 5px #999;
+    -moz-box-shadow: 2px 2px 5px #999;
+    filter: shadow(color=#999999, direction=135, strength=2);
+    display: grid;
+    grid-template-rows: repeat(3,1fr);
+    grid-template-areas: "empty numero numero" "feriado feriado feriado" "feriado feriado feriado";
+}
+
+.dia.active
+{
+
+    -webkit-box-shadow: 1px 1px 1px #888;
+    -moz-box-shadow: 2px 2px 5px #999;
+    filter: shadow(color=#999999, direction=135, strength=2);
+}
+
+.dia:hover
+{
+    -webkit-box-shadow: 3px 3px 3px #ea6060;
+    -moz-box-shadow: 2px 2px 5px #ea6060;
+    filter: shadow(color=#ea6060, direction=135, strength=2);
+}
+
+.numero
+{
+    grid-area: numero;
+    text-align: center;
+    font-weight: bold;
+}
+
+.feriado
+{
+    grid-area: feriado;
+    color: #757474;
+}
+
+.calendarCont
+{
+    width: 100%;
+    max-width: 600px;
+}
+
+th
+{
+    padding: 3px;
+    margin-bottom: 5px;
+    border-radius: 0px;
+    background: #ea6060;
+    color: #fff;
+}
+
+
+.resumenes {
+
+    grid-area: resumenes;
+}
+
+.detalle__semana {
+    grid-area: detalle__semana;
+}
+
+.detalle__dia {
+
+    grid-area: detalle__dia;
+}
+

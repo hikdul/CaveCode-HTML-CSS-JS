@@ -1,3 +1,4 @@
+
 .nbtn
 {
     background: transparent;
@@ -45,4 +46,19 @@
 {
     grid-area: feriado;
     color: #757474;
+}
+
+.calendarCont
+{
+    width: 50vh;
+    max-width: 600px;
+}
+
+th
+{
+    padding: 3px;
+    margin-bottom: 5px;
+    border-radius: 0px;
+    background: #ea6060;
+    color: #fff;
 }

@@ -1,0 +1,2 @@
+# IG (Indicadores de gestion)
+Simplemente son los elementos construidos uno a uno para poner en el proyecto de asispass para el cual trabajo y donde todo los elementos o se hacen con JS vanilla o con JQuery.. y como no soy amante de JQuery aremos aca cada componente con vanilla

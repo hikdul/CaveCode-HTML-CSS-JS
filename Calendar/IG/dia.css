@@ -1,0 +1,22 @@
+.nbtn
+{
+    background: transparent;
+    border: none;
+    border-radius: 15px;
+}
+.dia
+{
+    display: grid;
+    grid-template-rows: repeat(3,1fr);
+    grid-template-areas: "empty empty numero" "feriado feriado feriado" "feriado feriado feriado";
+}
+
+.numero
+{
+    grid-area: numero;
+}
+
+.feriado
+{
+    grid-area: feriado;
+}

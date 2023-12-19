@@ -176,10 +176,12 @@ body
 .card .secondBox .glass .subtitle2
 {
     text-align: start;
+    font-weight: 700;
+    font-size: .9em;
 }
 
 .card .secondBox .glass .value2
 {
     text-align: end;
-
+    font-size: .7em;
 }

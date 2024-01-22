@@ -1,20 +1,35 @@
 body {
     font-family: Arial, sans-serif;
+    margin-top: 50px;
 }
  
 .sortable-list {
     max-width: 300px;
+    padding: 5px;
     margin: 0 auto;
+    border-radius: 15px;
+    -webkit-box-shadow: 0px 0px 21px 0px rgba(234,96,96,0.89);
+    -moz-box-shadow: 0px 0px 21px 0px rgba(234,96,96,0.89);
+    box-shadow: 0px 0px 21px 0px rgba(234,96,96,0.89);
 }
- 
-ul {
+
+.listado {
     list-style-type: none;
     padding: 0;
 }
- 
-li {
-    background-color: #f0f0f0;
+
+.icono{
+    color: #ea6060;
+}
+
+.elemento {
+    background-color: #fff;
+    -webkit-box-shadow: 2px 2px 5px #999;
+    -moz-box-shadow: 2px 2px 5px #999;
+    filter: shadow(color=#999999, direction=135, strength=2);
     padding: 10px;
     margin: 5px;
     cursor: grab;
+    border-radius: 5px;
+    text-align: center;
 }

@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container
+{
+    position: relative;
+    width: 400px;
+    height: 400px;
+    background: #333;
+}
+
+.container .tile
+{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-size: 400px 400px;
+}
+
+
+.container .tile .img1
+{
+    background-image: url(i1.png);
+    transition: .5s;
+    opacity: 1;
+}
+
+
+.container .tile .img1
+{
+    background-image: url(i2.png);
+    opacity: 0;
+}
+
+.container:hover .tile.img1
+{
+    opacity: 0;
+
+}

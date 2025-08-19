@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Quick Start - Leaflet</title>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" type="image/x-icon" href="docs/images/favicon.ico" />
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+        integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+        crossorigin="" />
+    <link rel="stylesheet" href="https://unpkg.com/@bopen/leaflet-area-selection@0.6.1/dist/index.css" />
+
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+        integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+        crossorigin=""></script>
+
+    <script src="https://unpkg.com/@bopen/leaflet-area-selection@0.6.1/dist/index.umd.js"></script>
+
+
+</head>
+
+<body>
+
+    <div>
+        <button onclick=getMarkers()>cargar</button>
+    </div>
+
+
+    <div id="map" style="width: 600px; height: 400px;"></div>
+    <script>
+
+        const map = L.map('map').setView([-33.434965, -70.588967], 13);
+
+        const tiles = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            maxZoom: 19,
+            attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+        }).addTo(map);
+        
+
+
+        //const marker = L.marker([288, 148]).addTo(map)
+        //    .bindPopup('<b>Hello world!</b><br />I am a popup.').openPopup();
+//
+        //const circle = L.circle([51.508, -0.11], {
+        //    color: 'red',
+        //    fillColor: '#f03',
+        //    fillOpacity: 0.5,
+        //    radius: 500
+        //}).addTo(map).bindPopup('I am a circle.');
+
+        //const polygon = L.polygon([
+        //    [51.509, -0.08],
+        //    [51.503, -0.06],
+        //    [51.51, -0.047]
+        //]).addTo(map).bindPopup('I am a polygon.');
+
+
+        const popup = L.popup()
+            .setLatLng([-33.434965, -70.588967])
+            .setContent('I am a standalone popup.')
+            .openOn(map);
+
+        function onMapClick(e) {
+            popup
+                .setLatLng(e.latlng)
+                .setContent(`You clicked the map at ${e.latlng.toString()}`)
+                .openOn(map);
+        }
+
+        map.on('click', onMapClick);
+        
+
+        const areaSelection = new window.leafletAreaSelection.DrawAreaSelection();
+        const ltlng = [];
+        console.log({ltlng});
+
+        function getMarkers() {
+            const ltlng = areaSelection.polygon._latlngs[0];
+            //console.log({markers});
+            //markers.forEach(mark => ltlng.push(mark));
+            console.log(ltlng);
+            console.log(ltlng[0]);
+        }
+        map.addControl(areaSelection);
+
+    </script>
+
+
+
+</body>
+
+</html>
